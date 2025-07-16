@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: rgb(251, 209, 216);
+            color: rgb(68, 103, 156);
+        }
+
+        #bgvideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100vw;
+            min-height: 100vh;
+            object-fit: cover;
+            z-index: -2;
+        }
+
+        header {
+            background-color: cadetblue;
+            color: honeydew;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header a {
+            color: azure;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .menu-section {
+            padding: 40px 20px;
+        }
+
+        .menu-section h2 {
+            font-size: 30px;
+            margin: 20px 0;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .menu-item {
+            background-color: gainsboro;
+            border: 2px solid black;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 3px 6px lightcoral;
+            transition: transform 0.2s ease;
+            text-align: center;
+        }
+
+        .menu-item img {
+            width: 150px;
+            height: 120px;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-item h3,
+        .menu-item p {
+            font-size: large;
+        }
+
+        footer {
+            background-color: cadetblue;
+            text-align: center;
+            padding: 15px;
+            color: white;
+        }
+
+        footer a {
+            color: lightyellow;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+</head>
+<body>
+    <video autoplay muted loop id="bgvideo">
+        <source src="https://videos.pexels.com/video-files/4122971/4122971-uhd_2560_1440_25fps.mp4" type="video/mp4">
+    </video>
+
+    <header>
+        <h1>Welcome to Special Mart</h1>
+        <p>All Your Needs at One Step Closer!</p>
+        <nav>
+    <a href="index.html">Items</a>
+    <a href="contact.html">Contact</a>
+    <a href="services.html">Services</a>
+</nav>
+
+    </header>
+
+    <div class="menu-section">
+        <h2>Grocery</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://images.pexels.com/photos/1300975/pexels-photo-1300975.jpeg" alt="Fruits">
+                <h3>Fruits</h3>
+                <p>All Fruits are Available</p>
+                <span>$6</span>
+            </div>
+            <div class="menu-item">
+                <img src="https://media.istockphoto.com/id/650246108/photo/huge-group-of-fresh-vegetables-and-fruit-high-quality-studio-shot.jpg?s=1024x1024&w=is&k=20&c=Snml9l7kSC4A3oBrjXFk9Y4Uw7v8TsCUhWs15OQWsXc=" alt="Vegetables">
+                <h3>Vegetables</h3>
+                <p>All Vegetables are Available</p>
+                <span>$8</span>
+            </div>
+            <div class="menu-item">
+                <img src="https://media.istockphoto.com/id/648721294/photo/dry-beans-collection.jpg?s=1024x1024&w=is&k=20&c=nShjmiB4ZH5Eu4au3YlLgYwwjbX2_Jqn5cyUVWL0aqo=" alt="Pulses">
+                <h3>Pulses</h3>
+                <p>Pulses are Available</p>
+                <span>$8.5</span>
+            </div>
+        </div>
+
+        <h2>Sports</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://images.pexels.com/photos/2202685/pexels-photo-2202685.jpeg" alt="Badminton">
+                <h3>Badminton</h3>
+                <p>Rackets and Bats are Available</p>
+                <span>$10</span>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.pexels.com/photos/2694317/pexels-photo-2694317.jpeg" alt="Baseball">
+                <h3>Baseball</h3>
+                <p>Ball, Bat and Dresses Available</p>
+                <span>$12</span>
+            </div>
+            <div class="menu-item">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.BD4KM0C3oD6xXMD9AEnEwgHaE8?pid=Api&P=0&h=180" alt="Criket">
+                <h3>Criket</h3>
+                <p>Ball, Bat and Dresses Available</p>
+                <span>$16</span>
+            </div>
+        </div>
+
+        <h2>Food Items</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://images.pexels.com/photos/17696653/pexels-photo-17696653.jpeg" alt="Biriyani">
+                <h3>Biriyani</h3>
+                <p>Fresh Items are Available</p>
+                <span>$6.5</span>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.pexels.com/photos/1546896/pexels-photo-1546896.jpeg" alt="Fruit Salad">
+                <h3>Fruit Salad</h3>
+                <p>Fresh Items are Available</p>
+                <span>$9</span>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg" alt="Pizzas">
+                <h3>Pizzas</h3>
+                <p>Baked One is Available</p>
+                <span>$8.5</span>
+            </div>
+        </div>
+
+        <h2>Clothes</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://images.pexels.com/photos/32887344/pexels-photo-32887344.jpeg" alt="Ethnic Dress">
+                <h3>Women Ethnic Dress</h3>
+                <p>Ethnic wear is Available</p>
+                <span>$6.5</span>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.pexels.com/photos/28710322/pexels-photo-28710322.jpeg" alt="Men Formals">
+                <h3>Men Formals</h3>
+                <p>Stylish clothes are Available</p>
+                <span>$9</span>
+            </div>
+             <div class="menu-item">
+                <img src="https://media.istockphoto.com/id/2184267209/photo/saris.webp?s=1024x1024&w=is&k=20&c=ql3q-zLQZLVRCkukq6wFDw4WqDu5S2t4aZ84Bn9pF1s=" alt="Men Formals">
+                <h3>Sarees</h3>
+                <p>Traditional clothes are Available</p>
+                <span>$9</span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 special Mart | More</p>
+        <p>Follow us on <a href="http://www.specialmart.com" target="_blank">www.specialMart.com</a></p>
+    </footer>
+</body>
+</html>
